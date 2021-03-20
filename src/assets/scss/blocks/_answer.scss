@@ -1,0 +1,48 @@
+.answer {
+    position: relative;
+    min-height: 550px;
+    padding: 24px 30px 18px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #202024;
+    .dialog {
+        box-sizing: border-box;
+        @include message_window;
+    }
+    &__message {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 172px;
+        width: 259px;
+        @include white_border;
+        box-sizing: content-box;
+    }
+
+    &__modal {
+        padding: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        max-width: 400px;
+        height: 200px;
+        background-color: 'white';
+        border-radius: 5%;
+        .close {
+            cursor: pointer;
+            top: 5px;
+            right: 10px;
+            position: absolute;
+        }
+        .info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+} 

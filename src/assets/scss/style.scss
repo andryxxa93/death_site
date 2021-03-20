@@ -1,0 +1,49 @@
+@import "./libs/fonts";
+@import './base/mixins';
+
+*	{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.divider {
+    margin: 11px 0 7px 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.opacity_0 {
+    opacity: 0%;
+}
+
+.opacity_100 {
+    opacity: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.cursor {
+    cursor:pointer;
+}
+
+@import './blocks/button';
+@import './blocks/text';
+@import './blocks/header';
+@import './blocks/promo';
+@import './blocks/proof';
+@import './blocks/questions';
+@import './blocks/footer';
+@import './blocks/loading';
+@import './blocks/answer';
+@import './blocks/media';

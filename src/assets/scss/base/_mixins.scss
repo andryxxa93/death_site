@@ -1,0 +1,29 @@
+@mixin  white_border {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+@mixin message_window {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    width: 100%;
+    height: 84px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        right: 18px;
+        border: 10px solid transparent;
+        border-top: 17px solid #fff;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+}

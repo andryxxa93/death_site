@@ -1,0 +1,55 @@
+.promo {
+    min-height: 80vh;
+    position: relative;
+    background-color: #202024;
+    padding: 90px 20px 40px 20px;
+    overflow: hidden;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-mandala {
+            opacity: 0.2;
+            width: 220px;
+            height: 220px;
+        }
+        &-woman {
+            position: absolute;
+            width: 137px;
+            height: 137px;
+            z-index: 10;
+        }
+        &-blick {
+            position: absolute;
+            width: 100vw;
+            object-fit: cover;
+        }
+    }
+    &__buttons {
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &__suggestion {
+        width: 255px;
+        height: 252px;
+        position: relative;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-top: 60px;
+        padding: 60px 20px 30px 26px;
+        img {
+            width: 78px;
+            height: 78px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}

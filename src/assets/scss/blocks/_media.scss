@@ -1,0 +1,474 @@
+@media (min-width: 576px) {
+    header {
+        .header__title {
+            font-size: 14px;
+        }
+    }
+    .promo {
+        h1 {
+            font-size: 1.2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+        &__buttons {
+            padding: 40px 0 30px 0;
+        }
+        &__suggestion {
+            width: 330px;
+            height: 290px;
+            margin-top: 80px;
+        }
+        &__online {
+            font-size: 14px;
+        }
+    }
+    .proof {
+        height: 370px;
+        .text {
+            font-size: 18px;
+            &__yellow {
+                font-size: 22px;
+            }
+        }
+    }
+    .questions {
+        .text {
+            &__badScript {
+                font-size: 18px;
+            }
+        }
+        h2 {
+            font-size: 18px;
+        }
+        select {
+            width: 270px;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+    .answer {
+        padding: 24px 70px;
+        .text {
+            font-size: 18px;
+            max-width: 350px;
+        }
+        &__message {
+            max-width: 370px;
+            .text {
+                font-size: 18px;
+            }
+        }
+        .dialog {
+            font-size: 16px;
+            max-width: 350px;
+        }
+        &__modal  {
+            width: 300px;
+        }
+    }
+    .button {
+        width: 270px;
+        height: 50px;
+        font-size: 16px;
+    }
+    footer {
+        .footer__text {
+            font-size: 10px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    header {
+        .header__title {
+            font-size: 14px;
+        }
+    }
+    .promo {
+        min-height: 50vh;
+        h1 {
+            font-size: 22px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        &__img {
+            &-mandala {
+                width: 250px;
+                height: 250px;
+            }
+            &-woman {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        &__buttons {
+            padding: 40px 0 30px 0;
+        }
+        &__suggestion {
+            width: 350px;
+            height: 290px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h2 {
+                span  {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .proof {
+        height: 450px;
+        &::before {
+            background-position: 0 100%;
+        }
+        .text {
+            font-size: 22px;
+            &__yellow {
+                font-size: 24px;
+            }
+        }
+    }
+    .questions {
+        min-height: 700px;
+        .text {
+            &__badScript {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        h2 {
+            margin: 0 auto;
+            max-width: 500px;
+            margin-top: 50px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+        select {
+            width: 270px;
+            height: 50px;
+            font-size: 18px;
+        }
+        &__youdie {
+            margin-top: 150px;
+            img {
+                width: 56px;
+            }
+        }
+        &__eye {
+            &-left {
+                width: 100px;
+                height: 100px;
+            }
+            &-right {
+                width: 150px;
+                height: 70px;
+                right: -35px;
+            }
+        }
+    }
+    .answer {
+        min-height: 600px;
+        padding: 34px 25%;
+        .text {
+            font-size: 18px;
+        }
+        &__message {
+            max-width: 480px;
+            .text {
+                font-size: 18px;
+            }
+        }
+        .dialog {
+            font-size: 16px;
+        }
+        &__modal  {
+            width: 300px;
+        }
+    }
+    .button {
+        width: 270px;
+        height: 50px;
+        font-size: 16px;
+        &__green {
+            width: 320px;
+            height: 65px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .promo {
+        &__img {
+            &-mandala {
+                width: 270px;
+                height: 270px;
+            }
+            &-woman {
+                width: 170px;
+                height: 170px;
+            }
+        }
+        &__suggestion {
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 442px;
+            height: 437px;
+            margin-top: 110px;
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+    .proof {
+        height: 500px;
+        &::before {
+            background-position: 0 50%;
+        }
+        .text {
+            font-size: 24px;
+            &__yellow {
+                font-size: 24px;
+            }
+        }
+    }
+    .questions {
+        &__header {
+            padding: 0 20% 30px 20%;
+        }
+        &__count {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__dialog {
+            padding: 20px 12px;
+            max-width: 400px;
+            &::after {
+                bottom: -20%;
+            }
+        }
+        &__eye {
+            &-left {
+                width: 130px;
+                height: 130px;
+                left: -35px;
+            }
+            &-right {
+                width: 150px;
+                height: 100px;
+                right: -35px;
+            }
+        }
+    }
+    .answer {
+        min-height: 700px;
+        padding: 54px 25%;
+        .text {
+            font-size: 22px;
+            max-width: 480px;
+        }
+        .dialog {
+            max-width: 480px;
+        }
+        &__message {
+            box-sizing: border-box;
+            padding: 10%;
+            width: 480px;
+            height: 290px;
+            .text {
+                line-height: 35px;
+            }
+        }
+    }
+    footer {
+        .display-none {
+            display: none;
+        }
+        .footer__text {
+            max-width: 490px;
+            line-height: 18px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .promo {
+        h1 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        h2 {
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: 400;
+            .text {
+                font-size: 25px;
+                font-weight: 400;
+            }
+            .text__yellow {
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+        &__img {
+            &-mandala {
+                width: 300px;
+                height: 300px;
+            }
+            &-woman {
+                width: 190px;
+                height: 190px;
+            }
+        }
+        &__suggestion {
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 442px;
+            height: 437px;
+            margin-top: 140px;
+            img {
+                width: 130px;
+                height: 130px;
+            }
+        }
+        &__online {
+            font-size: 16px;
+        }
+    }
+    .proof {
+        .text {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+    .questions {
+        min-height: 800px;
+        h2 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        select {
+            width: 300px;
+            height: 60px;
+        }
+        &__dialog {
+            padding: 20px 12px;
+            max-width: 450px;
+            &::after {
+                bottom: -20%;
+            }
+        }
+        &__eye {
+            &-left {
+                width: 130px;
+                height: 130px;
+                left: -35px;
+            }
+            &-right {
+                width: 150px;
+                height: 100px;
+                right: -35px;
+            }
+        }
+        .text__badScript {
+            font-size: 25px;
+            line-height: 35px;
+            margin: 0 auto;
+            max-width: 420px;
+        }
+    }
+    .answer {
+        min-height: 900px;
+        .text {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .dialog {
+            height: 180px;
+            &::after {
+                bottom: -14%;
+            }
+        }
+    }
+    .button {
+        width: 300px;
+        height: 60px;
+        font-size: 18px;
+        &:not(:nth-child(1)) {
+            margin-top: 30px;
+        }
+        &__green {
+            width: 350px;
+            height: 70px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .promo {
+        &__img {
+            &-mandala {
+                width: 390px;
+                height: 390px;
+            }
+            &-woman {
+                width: 230px;
+                height: 230px;
+            }
+        }
+    }
+    .proof {
+        height: 660px;
+        &:before {
+            max-width: 1440px;
+            background-position: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .questions {
+        select {
+            width: 315px;
+            height: 78px;
+        }
+        &__eye {
+            &-left {
+                width: 160px;
+                height: 160px;
+                left: 25%;
+            }
+            &-right {
+                top: -60%;
+                right: 25%;
+                width: 300px;
+                height: 150px;
+            }
+        }
+    }
+    .button {
+        width: 315px;
+        height: 78px;
+        font-size: 20px;
+        &__green {
+            width: 400px;
+            height: 80px;
+            font-size: 20px;
+        }
+    }
+}
