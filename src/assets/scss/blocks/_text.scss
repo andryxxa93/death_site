@@ -15,6 +15,12 @@
         color: #F6C866;
         font-weight: 400;
     }
+    &__red {
+        color: red;
+    }
+    &__error {
+        margin-top: 20px;
+    }
     &__badScript {
         color: #fff;
         font-family: 'Bad Script';

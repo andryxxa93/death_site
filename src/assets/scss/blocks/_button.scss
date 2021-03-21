@@ -9,6 +9,7 @@
     outline: none;
     color: white;
     font-size: 14px;
+    cursor: pointer;
     &::after {
         content: '';
         position: absolute;
@@ -44,6 +45,12 @@
     &__green {
         width: 240px;
         background: linear-gradient(90deg, rgba(76, 217, 100, 0.9) -6.2%, rgba(50, 185, 73, 0.9) 100%);
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
     }
 }
 

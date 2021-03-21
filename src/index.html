@@ -51,15 +51,15 @@
     <div class="promo">
             <div class="promo__img">
                 <img class="promo__img-mandala" src="img/icon1.svg" alt="mandala">
-                <img class='promo__img-woman' src="img/woman1.png" alt="woman">
-                <img class="promo__img-blick" src="img/blik.png" alt="blick">
+                <img class='promo__img-woman' src="img/woman1.webp" alt="woman">
+                <img class="promo__img-blick" src="img/blik.webp" alt="blick">
             </div>
             <h2 class="promo__question text text__yellow text__fz16 text__lh25">Вас беспокоит вопрос о том,</h2>
             <h1 class="promo__question text text__yellow text__fz16 text__lh25 text__uppercase">когда Вы покинете этот Мир и <br> при каких обстоятельствах?</h1>
         <div class="promo__buttons">
-            <button class="button button__yellow">
+            <a href="#questions" class="button button__yellow button__link">
                 Да
-            </button>
+            </a>
             <button class="button button__yellow">
                 Нет
             </button>
@@ -68,7 +68,7 @@
             Онлайн предсказание
         </div>
         <div class="promo__suggestion">
-            <img src="img/hands.png" alt="hands">
+            <img src="img/hands.webp" alt="hands">
             <h2 class="text text__fz16">
                 Позвольте нам раскрыть эту волнующую тайну и <br>
                 <span class="text text__yellow text__fz20">с точностью определить дату и время вашей смерти,</span>
@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-    <div class="questions">
+    <div id="questions" class="questions">
         <div class="questions__header questions__p0">
             <img class="questions__eye questions__eye-right" src="icons/eye-1.svg" alt="eye">
         </div>
@@ -165,6 +165,7 @@
                     <button class="button button__yellow">
                         Далее
                     </button>
+                    <div class="text text__red text__error" style="display: none;">Вам должно быть больше 18 лет</div>
                 </div>
             </div>
             <div class="questions__count text text__gray text__fz12">

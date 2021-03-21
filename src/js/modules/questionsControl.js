@@ -38,7 +38,7 @@ const questionsControl = (questionsSelector, state) => {
     }
 
     questions[0].addEventListener('click', (e) => {
-        if (e.target.textContent.trim() === 'Да') {
+        if (e.target.classList.contains('button')) {
             changeQuestion(1, 2);
         }
     })
@@ -50,13 +50,14 @@ const questionsControl = (questionsSelector, state) => {
     }) 
 
     questions[2].addEventListener('click', (e) => {
-        if (e.target.classList.contains('button') && checkDate()) {
-            let age = getAge(state);
-            if (age >= 18) {
-                document.querySelectorAll('.questions__eye').forEach(el => el.style = 'display: none')
-                changeQuestion(3, 4, true); 
-            }
-        } else if (e.target.classList.contains('button')) {
+        const age = getAge(state);
+        if (e.target.classList.contains('button') && checkDate() && age >=18) {
+            document.querySelectorAll('.questions__eye').forEach(el => el.style = 'display: none')
+            changeQuestion(3, 4, true);
+        } else if (e.target.classList.contains('button') && checkDate() && age < 18) {
+            document.querySelector('.text__error').style = 'display: block';
+        } else if (e.target.classList.contains('button') && !checkDate()) {
+            document.querySelector('.text__error').style = 'display: none';
             questions[2].querySelectorAll('select')[0].style = 'border-color: #EE5353';
         }
     })
